@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexure Healthcare | Purity in Every Layer</title>
+    <meta name="description"
+        content="Trusted Supplier of Medical Consumables in Tamil Nadu. We supply high quality medical products including gauze, cotton, bandages, and more.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/logo.jpg" alt="Nexure Healthcare Logo" class="logo-img">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#why-choose-us" class="nav-link">Why Nexure</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#downloads" class="nav-link">Downloads</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <a href="tel:+917904089754" class="btn btn-blue">Call Now</a>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to <br><span>Nexure Healthcare</span></h1>
+                <p class="hero-subtitle">Purity in Every Layer.</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="https://wa.me/917904089754?text=Hello%20I%20want%20to%20order%20medical%20products%20from%20Nexure%20Healthcare"
+                        target="_blank" class="btn btn-green">
+                        <i class='bx bxl-whatsapp'></i> Order on WhatsApp
+                    </a>
+                    <a href="#products" class="btn btn-blue">
+                        View Products <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtext">We Supply</p>
+            </div>
+
+            <!-- Product Category Filters -->
+            <div class="category-filters" id="category-filters">
+                <button class="filter-btn active" data-filter="All">All Products</button>
+                <button class="filter-btn" data-filter="Gauze Products">Gauze Products</button>
+                <button class="filter-btn" data-filter="Dressing Products">Dressing Products</button>
+                <button class="filter-btn" data-filter="Cotton Products">Cotton Products</button>
+            </div>
+
+            <!-- Product Search -->
+            <div class="product-search-container"
+                style="text-align: center; margin-bottom: 30px; position: relative; max-width: 500px; margin-left: auto; margin-right: auto;">
+                <input type="text" id="product-search" class="product-select"
+                    placeholder="Search products by name or description..."
+                    style="width: 100%; padding-right: 40px; margin-bottom: 0;">
+                <i class='bx bx-search'
+                    style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); font-size: 1.2rem; color: var(--text-gray);"></i>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- Products dynamically injected via JS -->
+            </div>
+
+            <div class="view-all-container">
+                <a href="#products" class="btn btn-green view-all-btn">
+                    View All Products <i class='bx bx-chevron-down'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Nexure Healthcare</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtext">Our Commitment to Excellence</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class='bx bx-check-shield'></i>
+                    <h3 class="why-card-title">Hospital Grade Quality</h3>
+                    <p class="why-card-desc">High-quality medical consumables suitable for hospitals, clinics, and
+                        professional healthcare use.</p>
+                </div>
+
+                <div class="why-card">
+                    <i class='bx bx-building-house'></i>
+                    <h3 class="why-card-title">Direct Factory Supply</h3>
+                    <p class="why-card-desc">Products sourced directly from trusted manufacturing units in Chatrapatti,
+                        ensuring consistent quality and reliability.</p>
+                </div>
+
+                <div class="why-card">
+                    <i class='bx bx-rupee'></i>
+                    <h3 class="why-card-title">Competitive Wholesale Pricing</h3>
+                    <p class="why-card-desc">Cost-effective pricing for hospitals, clinics, medical stores, and
+                        distributors.</p>
+                </div>
+
+                <div class="why-card">
+                    <i class='bx bxs-truck'></i>
+                    <h3 class="why-card-title">Fast Delivery Across India</h3>
+                    <p class="why-card-desc">Efficient logistics and quick dispatch to ensure timely delivery of medical
+                        supplies.</p>
+                </div>
+
+                <div class="why-card">
+                    <i class='bx bx-package'></i>
+                    <h3 class="why-card-title">Bulk Order Support</h3>
+                    <p class="why-card-desc">Dedicated assistance for hospitals, clinics, and distributors placing bulk
+                        orders.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <i class='bx bx-support'></i>
+                    <h3 class="why-card-title">Reliable Supply & Service</h3>
+                    <p class="why-card-desc">Consistent product availability and dependable service for healthcare
+                        providers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <h3 class="about-subtitle">Trusted Supplier of Medical Consumables Across <span>India</span></h3>
+                <p class="about-desc">We supply high-quality medical consumables to hospitals, clinics, medical stores,
+                    and healthcare providers across India. Our focus is on consistent product quality, reliable service,
+                    and competitive wholesale pricing to support the needs of healthcare professionals.</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class='bx bxs-check-shield'></i>
+                        <div style="display: flex; flex-direction: column; text-align: left;">
+                            <span>Hospital Grade Quality</span>
+                            <span
+                                style="font-size: 0.9rem; font-weight: 400; color: var(--text-gray); margin-top: 5px; line-height: 1.4;">Medical
+                                consumables suitable for hospitals and professional healthcare use.</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class='bx bxs-medal'></i>
+                        <div style="display: flex; flex-direction: column; text-align: left;">
+                            <span>Reliable Supply & Service</span>
+                            <span
+                                style="font-size: 0.9rem; font-weight: 400; color: var(--text-gray); margin-top: 5px; line-height: 1.4;">Consistent
+                                supply and dependable service for hospitals, clinics, and distributors.</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class='bx bxs-factory'></i>
+                        <div style="display: flex; flex-direction: column; text-align: left;">
+                            <span>Direct Factory Supply</span>
+                            <span
+                                style="font-size: 0.9rem; font-weight: 400; color: var(--text-gray); margin-top: 5px; line-height: 1.4;">Products
+                                sourced directly from trusted manufacturing units to ensure quality and competitive
+                                pricing.</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class='bx bxs-file-blank'></i>
+                        <div style="display: flex; flex-direction: column; text-align: left;">
+                            <span>GST Registered Business</span>
+                            <span
+                                style="font-size: 0.9rem; font-weight: 400; color: var(--text-gray); margin-top: 5px; line-height: 1.4;">Officially
+                                registered business ensuring transparent and compliant transactions.</span>
+                            <span
+                                style="font-size: 0.85rem; font-weight: 600; color: var(--primary-blue); margin-top: 5px;">GSTIN:
+                                33KUIPS5363E1Z9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section class="downloads" id="downloads">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Downloads</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="downloads-content"
+                style="text-align: center; max-width: 700px; margin: 0 auto; background-color: var(--bg-white); padding: 40px 30px; border-radius: 12px; box-shadow: var(--shadow-soft); border: 1px solid var(--border-color);">
+                <i class='bx bxs-file-pdf' style="font-size: 3rem; color: #ff4757; margin-bottom: 15px;"></i>
+                <h3 style="font-size: 1.6rem; color: var(--primary-blue); margin-bottom: 15px; font-weight: 700;">
+                    Product Catalogue</h3>
+                <p style="color: var(--text-gray); margin-bottom: 30px; line-height: 1.6; font-size: 1.05rem;">
+                    Download our complete product catalogue to explore the range of medical consumables supplied by
+                    Nexure Healthcare.
+                </p>
+
+                <a href="downloads/PriceSheet _ Nexure Healthcare.pdf"
+                    download="Nexure_Healthcare_Product_Catalogue.pdf" class="btn btn-blue"
+                    style="padding: 15px 30px; font-size: 1.1rem; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: none; cursor: pointer; text-decoration: none;">
+                    <i class='bx bxs-download' style="font-size: 1.3rem;"></i>
+                    Download Product Catalogue (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What is the minimum order quantity (MOQ)? <i
+                            class='bx bx-chevron-down'></i></button>
+                    <div class="faq-answer">
+                        <p>The minimum order quantity depends on the product type. Please contact us for bulk order
+                            details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Do you supply products across India? <i
+                            class='bx bx-chevron-down'></i></button>
+                    <div class="faq-answer">
+                        <p>Yes, we supply medical consumables to hospitals, clinics, and distributors across India.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What products do you supply? <i
+                            class='bx bx-chevron-down'></i></button>
+                    <div class="faq-answer">
+                        <p>We supply medical consumables such as gauze swabs, bandages, cotton rolls, dressing pads, and
+                            other hospital supplies.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What is the delivery time? <i class='bx bx-chevron-down'></i></button>
+                    <div class="faq-answer">
+                        <p>Delivery time depends on the order quantity and location. We ensure fast and reliable
+                            dispatch.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">How can I place an order? <i class='bx bx-chevron-down'></i></button>
+                    <div class="faq-answer">
+                        <p>Orders can be placed through WhatsApp, phone call, or by contacting us through the website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" style="padding-bottom: 50px;">
+        <div class="container contact-container" style="max-width: 1100px;">
+            <div class="contact-content" style="width: 100%;">
+                <h2 class="contact-title" style="text-align: center;">Contact Us</h2>
+                <div class="contact-divider" style="margin: 0 auto 40px auto;"></div>
+
+                <!-- Full Width Enquiry Form -->
+                <div class="contact-form-wrapper" style="margin-bottom: 50px;">
+                    <h3 class="form-title" style="text-align: center;">Quick Product Enquiry</h3>
+                    <form id="enquiry-form" class="enquiry-form" style="max-width: 800px; margin: 0 auto;">
+                        <div class="contact-grid" style="grid-template-columns: 1fr 1fr; margin-top: 0; gap: 20px;">
+                            <div class="input-group" style="margin-bottom: 0;">
+                                <input type="text" id="eq-name" placeholder="Your Name *" required>
+                            </div>
+                            <div class="input-group" style="margin-bottom: 0;">
+                                <input type="text" id="eq-business"
+                                    placeholder="Hospital / Clinic / Pharmacy / Business Name">
+                            </div>
+                            <div class="input-group" style="margin-bottom: 0;">
+                                <input type="tel" id="eq-phone" placeholder="Phone Number *" required>
+                            </div>
+                            <div class="input-group" style="margin-bottom: 0;">
+                                <select id="eq-product" required>
+                                    <option value="" disabled selected>Select Product Required *</option>
+                                    <option value="Gauze Swab Type 17">Gauze Swab Type 17</option>
+                                    <option value="Gauze Swab Type 13">Gauze Swab Type 13</option>
+                                    <option value="X-Ray Detectable Gauze">X-Ray Detectable Gauze</option>
+                                    <option value="Sterile Gauze">Sterile Gauze</option>
+                                    <option value="Dressing Pad">Dressing Pad</option>
+                                    <option value="Mopping Pad">Mopping Pad</option>
+                                    <option value="Gamjee Roll">Gamjee Roll</option>
+                                    <option value="Cotton Roll">Cotton Roll</option>
+                                    <option value="Other">Other (Please specify in message)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group" style="margin-top: 20px;">
+                            <textarea id="eq-message" rows="3" placeholder="Additional Message (Optional)"></textarea>
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn btn-blue form-btn" style="max-width: 300px;">Submit
+                                Enquiry</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Bottom Two Columns: Details & Map -->
+                <div class="contact-grid" style="align-items: flex-start; gap: 50px;">
+                    <div class="contact-info-wrapper" style="justify-content: flex-start; padding-top: 5px;">
+                        <div class="contact-info" style="gap: 35px; margin-bottom: 40px;">
+                            <div class="contact-item">
+                                <i class='bx bxs-map'></i>
+                                <a href="https://www.google.com/maps?q=9.415469,77.598768" target="_blank"
+                                    class="contact-link"
+                                    style="text-decoration: underline;">Chatrapatti,Rajapalayam,Tamilnadu</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class='bx bxs-phone'></i>
+                                <a href="tel:+917904089754" class="contact-link">+91 7904089754</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class='bx bxs-envelope'></i>
+                                <a href="mailto:nexurehealthcare@gmail.com"
+                                    class="contact-link">nexurehealthcare@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class='bx bxs-certification'></i>
+                                <p class="contact-link" style="margin: 0; cursor: default;">GSTIN: 33KUIPS5363E1Z9</p>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/917904089754" target="_blank" class="btn btn-green contact-btn">
+                            Order on WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-map-wrapper"
+                        style="height: 350px; min-height: 350px; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                        <iframe
+                            src="https://maps.google.com/maps?q=9.415469,77.598768&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917904089754" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
